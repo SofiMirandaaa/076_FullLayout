@@ -30,13 +30,14 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.latihan4.ui.theme.Latihan4Theme
+import com.example.project4.R
+import com.example.project4.ui.theme.Project4Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Latihan4Theme {
+            Project4Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
@@ -100,7 +101,7 @@ fun Lokasi(){
     )
     Row(){
         Image(
-            painter = painterResource(id = R.drawable.ic_lokasi),
+            painter = painterResource(id = R.drawable.baseline_location_on_24),
             contentDescription = "", modifier = Modifier.size(40.dp)
         )
         Spacer(modifier = Modifier.padding(5.dp))
@@ -197,7 +198,7 @@ fun Keterangan() {
 @Preview(showBackground = true)
 @Composable
 fun HomePreview() {
-    Latihan4Theme {
+    Project4Theme {
         Home()
     }
 }
